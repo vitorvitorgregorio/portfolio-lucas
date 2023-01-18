@@ -24,6 +24,9 @@ function Projetos() {
           <div className="projetos__card card--4">
             <img src={brasildental} alt="" />
           </div>
+          <div className="projetos__card card--7 card--7-mobile">
+            <img src={queijo} alt="" />
+          </div>
       </div>
       <div className="projetos__second-column"> 
           <div className="projetos__card card--5">
@@ -32,7 +35,7 @@ function Projetos() {
           <div className="projetos__card card--6">
             <img src={start} alt="" />
           </div>
-          <div className="projetos__card card--7">
+          <div className="projetos__card card--7 card--7-desktop">
             <img src={queijo} alt="" />
           </div>
       </div>

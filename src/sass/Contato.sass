@@ -1,7 +1,7 @@
 @import variables
 
 .contato
-    @include section-margin
+    margin-top:$section-margin
     @include container
     display: flex
     flex-direction: column
@@ -13,10 +13,15 @@
 .contato__socialList
     display: flex
     gap: 1rem
-
+.socialList__icon
+    opacity: 0.8
+    transition:  0.2s ease-in-out
+    &:hover
+        opacity: 1
+    
 .contato__text
     text-align: center
-    font-weight: 300
+    font-weight: 400
     font-size: 1.5rem
     line-height: 48px
     color: $black

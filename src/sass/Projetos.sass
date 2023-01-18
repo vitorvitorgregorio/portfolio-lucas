@@ -2,7 +2,7 @@
 
 
 .projetos 
-    @include section-margin
+    margin-top:$section-margin
     @include container
     display: flex
     flex-direction: column
@@ -12,6 +12,7 @@
     display: grid
     grid-template-areas: "card--1 card--1 card--2" "card--3 card--4 card--2" 
     gap: 1.4rem
+    align-items: end
     
 
 .projetos__card 
@@ -21,7 +22,7 @@
     grid-area: card--1
 .card--2
     grid-area: card--2
-    margin-top: 50%
+    
 .card--3
     grid-area: card--3
 .card--4
@@ -37,3 +38,34 @@
 
 .card--6 
     margin-right: 10%
+.card--7-mobile
+    display: none
+.card--7-desktop
+    position: relative
+    bottom: 20%
+    display: flex
+    justify-content: flex-end
+    img
+        width: auto
+
+
+@media screen and (max-width: $tablet)
+    .projetos__first-column 
+        display: grid
+        grid-template-areas: "card--1 card--1" "card--2 card--3" "card--2 card--4" "card--7 card--4"
+        gap: 1.4rem
+        align-items: end
+    .card--7-desktop
+        display: none
+    .card--7-mobile
+        display: flex
+        grid-area: card--7
+    .projetos__second-column 
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+        gap: 1.4rem
+    .card--5
+        align-self: flex-end
+    .card--6
+        margin-right: 0
