@@ -1,7 +1,7 @@
 @import variables
 
 .contato
-    margin-top:$section-margin
+    @include section-margin(180px)
     @include container
     display: flex
     flex-direction: column
@@ -25,3 +25,7 @@
     font-size: 1.5rem
     line-height: 48px
     color: $black
+
+@media screen and (max-width:$tablet)
+    .contato
+        @include section-margin(80px)

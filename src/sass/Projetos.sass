@@ -2,7 +2,7 @@
 
 
 .projetos 
-    margin-top:$section-margin
+    @include section-margin(180px)
     @include container
     display: flex
     flex-direction: column
@@ -50,6 +50,9 @@
 
 
 @media screen and (max-width: $tablet)
+    @media screen and (max-width:$tablet)
+    .projetos
+        @include section-margin(80px)
     .projetos__first-column 
         display: grid
         grid-template-areas: "card--1 card--1" "card--2 card--3" "card--2 card--4" "card--7 card--4"

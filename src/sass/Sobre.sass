@@ -3,7 +3,7 @@
 .sobre
     margin-top
     @include container
-    margin-top: $section-margin
+    @include section-margin(180px)
     display: flex
     align-items: center
     justify-content: center
@@ -17,3 +17,8 @@
         text-decoration: line-through
     strong
         font-weight: 700
+
+
+@media screen and (max-width:$tablet)
+    .sobre
+        @include section-margin(80px)

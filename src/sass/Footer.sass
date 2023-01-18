@@ -1,7 +1,7 @@
 @import variables
 
 .footer
-    margin-top:$section-margin
+    @include section-margin(180px)
     @include container
     border: 1px solid $gray
     background: $white
@@ -29,3 +29,7 @@
             gap: 0.2rem
             align-items: center
             text-align: center
+
+@media screen and (max-width:$tablet)
+    .footer
+        @include section-margin(80px)
