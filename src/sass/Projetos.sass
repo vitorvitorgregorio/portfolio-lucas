@@ -1,0 +1,39 @@
+@import variables
+
+
+.projetos 
+    @include section-margin
+    @include container
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+.projetos__first-column 
+    display: grid
+    grid-template-areas: "card--1 card--1 card--2" "card--3 card--4 card--2" 
+    gap: 1.4rem
+    
+
+.projetos__card 
+    img
+        width: 100%
+.card--1 
+    grid-area: card--1
+.card--2
+    grid-area: card--2
+    margin-top: 50%
+.card--3
+    grid-area: card--3
+.card--4
+    grid-area: card--4
+
+
+.projetos__second-column 
+    display: grid
+    grid-template-columns: 1fr 1fr  
+    gap: 1.4rem
+    
+
+
+.card--6 
+    margin-right: 10%

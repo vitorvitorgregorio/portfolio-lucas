@@ -1,0 +1,51 @@
+@import variables
+.logo-mobile
+    display: none
+.header
+    background: $white
+    border-bottom: 1px solid $gray
+.header__navigation
+    display: grid
+    align-items: center
+    grid-template-columns: repeat(3, 1fr)
+    padding-top: 1rem
+    padding-bottom: 1rem
+    @include container
+.logo
+    justify-self: flex-start !important
+.navigation__list
+    display: flex
+    gap: 1.5rem
+    list-style-type: none
+    justify-self: center
+    padding: 0
+    margin: 0
+.navigation__link
+    color: $black
+    font-size: 1rem
+    line-height: 1rem
+    font-weight: 400
+    text-decoration: none
+    padding: 0.5rem 1rem
+    display: flex
+    align-items: center
+    border-radius: 400px
+    transition: 0.2s ease-in-out
+    border: 1px solid transparent
+    &:hover
+        background: #0000000D
+        
+.navigation__link.active
+    background: #0000000D
+    border: 1px solid $gray
+
+@media only screen and (max-width: $tablet-small)
+    .logo-desktop
+        display: none
+    .logo-mobile
+        display: block
+@media only screen and (max-width: $phone-small)
+    .header__navigation
+        grid-template-columns: repeat(2, 1fr)
+    .navigation__list
+        gap: 0.5rem
