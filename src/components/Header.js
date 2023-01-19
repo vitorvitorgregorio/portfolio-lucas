@@ -1,6 +1,8 @@
 import { ReactComponent as LogoDesktop } from "../svg/logo-desktop.svg";
 import { ReactComponent as LogoMobile } from "../svg/logo-mobile.svg";
+import { useState } from "react";
 import '../sass/Header.sass'
+
 function Header() {
   return (
     <header className="header">
@@ -11,7 +13,7 @@ function Header() {
         </div>
         <ul className="navigation__list">
           <li>
-            <a href="#sobre" className="navigation__link active">Sobre</a>
+            <a href="#sobre" className="navigation__link">Sobre</a>
           </li>
           <li>
             <a href="#projetos" className="navigation__link">Projetos</a>
